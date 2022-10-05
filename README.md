@@ -1,0 +1,1 @@
+Institutional lading page for MyDux. Made with React, Typescript and TailwindCSS.
