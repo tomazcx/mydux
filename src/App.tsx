@@ -1,7 +1,15 @@
+import { Footer } from "./components/Footer"
+import { Header } from "./components/Header"
 
 function App() {
   return (
-    <h1 className='text-purple-400'>Hello world!</h1>
+    <div className="flex flex-col justify-between min-h-screen">
+      <Header />
+      <main className="flex flex-col justify-between"> 
+
+      </main>
+      <Footer />
+    </div>
   )
 }
 
