@@ -1,6 +1,6 @@
-import Hamburguer from "../assets/hamburguer"
-import LogoHeader from "../assets/logo-header"
-import LogoMobile from "../assets/logo-header-mobile"
+import Hamburguer from "../../assets/SVG/hamburguer"
+import LogoHeader from "../../assets/Logo/logo-header"
+import LogoMobile from "../../assets/Logo/logo-header-mobile"
 
 export const Header = () => {
     return (
