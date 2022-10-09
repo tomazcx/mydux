@@ -3,6 +3,15 @@ module.exports = {
     content: ['./src/**/*.tsx'],
     theme: {
         extend: {
+            keyframes: {
+                showModal: {
+                    "0%": { transform: "translateX(50%)" },
+                    "100%": { transform: "translateX(0%)" }
+                }
+            },
+            animation: {
+                show: "showModal .2s"
+            },
             fontFamily: {
                 sans: "Kumbh Sans, sans-serif"
             },

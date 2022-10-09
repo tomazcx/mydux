@@ -9,7 +9,7 @@ export const About = () => {
         <article className="bg-gray-50 py-12" id="about">
           <div className="mx-auto w-10/12 flex flex-col gap-16 lg:gap-8">
             <div className="flex flex-col gap-3">
-              <h2 className="text-purple-400 font-semibold text-2xl md:text-4xl text-center lg:text-start">Sobre Nós</h2>
+              <h2 className="title-section">Sobre Nós</h2>
               <p className="text-gray-600 text-normal md:text-xl text-center lg:text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
                 Sed sed blandit neque.</p>
             </div>

@@ -1,10 +1,16 @@
 import Hamburguer from "../../assets/SVG/hamburguer"
 import LogoHeader from "../../assets/Logo/logo-header"
 import LogoMobile from "../../assets/Logo/logo-header-mobile"
+import { useState } from "react"
+import { Modal } from "../Header/Modal"
 
 export const Header = () => {
+
+    const [modalActive, setActive] = useState(false)
+
     return (
         <header className="flex items-center justify-between lg:px-32 px-8 text-purple-400 w-100">
+            {modalActive ? <Modal setActive={setActive} /> : <></>}
             <div className="block md:hidden">
                 <LogoMobile />
             </div>
@@ -18,7 +24,7 @@ export const Header = () => {
                 <a href="#feedback" className="hover:opacity-95 transition-opacity">Depoimentos</a>
                 <a href="#contact" className="hover:opacity-95 transition-opacity">Contato</a>
             </nav>
-            <div className="block lg:hidden">
+            <div className="block lg:hidden" onClick={() => setActive(!modalActive)}>
                 <Hamburguer />
             </div>
         </header>
