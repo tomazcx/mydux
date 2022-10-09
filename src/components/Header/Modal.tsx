@@ -10,7 +10,7 @@ export const Modal = ({setActive} : ModalInterface) => {
             <a onClick={() => setActive(false)}  href="#blog" className="text-white font-bold">Blog</a>
             <a onClick={() => setActive(false)}  href="#feedback" className="text-white font-bold">Depoimentos</a>
             <hr className="border-white w-full" />
-            <a onClick={() => setActive(false)}  href="#home" className="text-white font-bold bg-purple-200 text-center py-2 rounded-full w-full">Contact</a>
+            <a onClick={() => setActive(false)}  href="#contact" className="text-white font-bold bg-purple-200 text-center py-2 rounded-full w-full">Contact</a>
         </div>
     )
 }
